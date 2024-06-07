@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Cipher Challenge <i class="fas fa-user-lock"></i></h1>
+        <div class="input-group">
+            <input type="text" id="inputWord" placeholder="Enter a word to encrypt">
+            <button onclick="shiftAndDisplay()">Encrypt <i class="fa-solid fa-key"></i></button>
+        </div>
+        <div class="output">
+            <p>Cipher: <span id="encryptedWord" class="encrypted-word"></span></p>
+        </div>
+        <div class="input-section">
+            <input type="number" id="guessShift" placeholder="Guess the shift number">
+            <button onclick="check_guess()">Check <i class="fa-solid fa-circle-check"></i></button>
+        </div>
+        <div class="result">
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
